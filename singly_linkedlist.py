@@ -29,7 +29,7 @@ class LinkedList:
 
     def insertAtMid(self,newNode,pos):
         if self.head is None:
-            self.head = newNode 
+            self.head = newNode  
 
     
     def printList(self):

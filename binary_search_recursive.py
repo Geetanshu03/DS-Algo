@@ -1,6 +1,6 @@
 def binary_search_recursive(l,low,high,x):
     while(low <=high):
-        mid = low + (high+low//2)
+        mid = low + (high-low//2)
         if (l[mid] < x):
             return binary_search_recursive(l,mid+1,high,x)
         elif (l[mid] > x):

@@ -5,7 +5,8 @@ def binary_search(l,x):
     mid=0
     while(low <= high):
         # mid is calculated this way to avoid overflow error
-        mid = low + (high+low//2)
+        mid = low + (high-low//2)
+        print(mid)
         if (l[mid] < x):
             low = mid+1
         elif (l[mid] > x):
